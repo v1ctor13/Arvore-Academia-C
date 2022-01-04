@@ -1,3 +1,6 @@
+#ifndef ARVORE_H
+#define ARVORE_H
+
 #define MENSALIDADEPADRAO 100
 
 NODE* inicializaArvore(){
@@ -124,3 +127,5 @@ void liberaArvore(NODE* raiz){
     liberaArvore(raiz->proxIrmao);
     free(raiz);
 }
+
+#endif
